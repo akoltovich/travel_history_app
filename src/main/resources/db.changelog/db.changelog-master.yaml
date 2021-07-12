@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: db\changelog\create_user_table.changelog.yaml
+  - include:
+      file: db\changelog\create_travel_table.changelog.yaml
+  - include:
+      file: db\changelog\insert_users_data.changelog.yaml

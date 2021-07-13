@@ -1,9 +1,6 @@
 package com.intetics.java.task.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
@@ -32,8 +29,7 @@ public class Travel {
     private int yearOfTravel;
 
     @Column(name = "weather")
-    @NotBlank
-    @Length(min = 2, max = 30)
+    @Setter(AccessLevel.NONE)
     private String weather;
 
     @Column(name = "description")
@@ -43,5 +39,4 @@ public class Travel {
 
     @ManyToOne
     private User user;
-
 }

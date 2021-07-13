@@ -6,10 +6,10 @@ import java.lang.annotation.*;
 
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
-@Constraint(validatedBy = BirthDateValidator.class)
+@Constraint(validatedBy = CountryValidator.class)
 @Documented
-public @interface DateOfBirthValidation {
-    String message() default "User must be already born.";
+public @interface CountryValidation {
+    String message() default "This country does not exist.";
 
     Class<?>[] groups() default {};
 

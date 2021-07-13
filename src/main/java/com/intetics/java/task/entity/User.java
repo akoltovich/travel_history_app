@@ -40,6 +40,6 @@ public class User {
     @DateOfBirthValidation
     private LocalDate dateOfBirth;
 
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
     private List<Travel> travels;
 }

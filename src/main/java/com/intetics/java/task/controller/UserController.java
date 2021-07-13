@@ -69,7 +69,7 @@ public class UserController {
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found"),
             @ApiResponse(code = 500, message = "Server not available")
     })
-    public void updateUser(@Valid @RequestBody UserDto user, @Positive @PathVariable Long id){
+    public void updateUser(@Valid @RequestBody UserDto user, @Positive @PathVariable Long id) {
         log.info("Calling update user with id {} by fields {}", id, user);
         userService.updateUser(user, id);
     }

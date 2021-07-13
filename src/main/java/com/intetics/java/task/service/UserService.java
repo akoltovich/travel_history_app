@@ -55,7 +55,6 @@ public class UserService {
                     .firstName(user.getFirstName())
                     .lastName(user.getLastName())
                     .dateOfBirth(user.getDateOfBirth())
-//                    .travels(fromListOfDtoToListOfEntities(user.getTravels()))
                     .build());
             log.info("User with id {} was successfully updated", id);
         } else {
@@ -117,7 +116,6 @@ public class UserService {
                     .description(t.getDescription())
                     .userId(t.getUser().getId())
                     .build());
-
         }
         return newList;
     }
@@ -133,7 +131,6 @@ public class UserService {
                     .description(t.getDescription())
                     .user(userRepository.findById(t.getUserId()).get())
                     .build());
-
         }
         return newList;
     }

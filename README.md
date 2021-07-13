@@ -6,17 +6,17 @@ You can use Swagger UI to testing application http://localhost:8080/travelhistor
 
 Main path for app is http://localhost:8080/travelhistory + /users or /travels
 
-#Testing with Postman
+# Testing with Postman
 
 #### http://localhost:8080/travelhistory/users
 
-######Get mapping
+###### Get mapping
 
 /users must return all users from database
 
 /id must return from database user by his id. Example of input: http://localhost:8080/travelhistory/users/id?id=1
 
-######Post mapping
+###### Post mapping
 
 /users must add user in database. Example of body:
 ```json
@@ -27,7 +27,7 @@ Main path for app is http://localhost:8080/travelhistory + /users or /travels
 }
 ```
 
-######Put mapping
+###### Put mapping
 
 /{id} must update user information in database by his id. Example of input: http://localhost:8080/travelhistory/users/1
 
@@ -40,19 +40,19 @@ Example of body:
 }
 ```
 
-######Delete mapping
+###### Delete mapping
 
 /{id} must delete user and his travels from database by his id. Example of input: http://localhost:8080/travelhistory/users/1
 
 #### http://localhost:8080/travelhistory/travels
 
-######Get mapping
+###### Get mapping
 
 /travels must return all travels from database
 
 /id must return from database travel by its id. Example of input: http://localhost:8080/travelhistory/travels/id?id=1
 
-######Post mapping
+###### Post mapping
 
 /travels must add travel in database, only if traveller already exists! Example of body:
 ```json
@@ -64,7 +64,7 @@ Example of body:
 }
 ```
 
-######Put mapping
+###### Put mapping
 
 /{id} must update travel information in database by its id. Example of input: http://localhost:8080/travelhistory/travels/1
 
@@ -78,8 +78,8 @@ Example of body:
 }
 ```
 
-######Delete mapping
+###### Delete mapping
 
 /{id} must delete travel from database by its id. Example of input: http://localhost:8080/travelhistory/travels/1
 
-#I hope you will like it :)
+# I hope you will like it :)
